@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html{
+            font-size: 100px;
+        }
+
+        .form{
+            width: 98%;
+            font-size: .16rem;
+            border: .01rem solid lavender;
+            margin: 50px 0 0 0;
+        }
+
+        .form tr td{
+            border: .01rem solid lavender;
+        }
+
+        .form input{
+            margin: .1rem;
+            line-height: .2rem;
+        }
+
+        .form .submit{
+            background: greenyellow;
+        }
+
+        .form .submitBox{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<table class="form">
+    <tr><td>用户信息：</td><td>user.json</td></tr>
+    <tr><td>用户名：</td><td><input type="text" data-name="uname"></td></tr>
+    <tr><td>密码：</td><td><input type="text" data-name="pwd"></td></tr>
+    <tr><td colspan="2" class="submitBox"><input type="button" class="submit" value="提交"></td></tr>
+</table>
+
+<table class="form">
+    <tr><td>产品分类：</td><td>class.json</td></tr>
+    <tr><td>分类FID：</td><td><input type="text" data-name="fid" value="0"></td></tr>
+    <tr><td>分类名称：</td><td><input type="text" data-name="className"></td></tr>
+    <tr><td>热度：</td><td><input type="text" data-name="hot"></td></tr>
+    <tr><td colspan="2" class="submitBox"><input type="button" class="submit" value="提交"></td></tr>
+</table>
+
+<table class="form">
+    <tr><td>产品补充信息：</td><td>productsize.json</td></tr>
+    <tr><td>产品ID：</td><td><input type="text" data-name="pid" value="0"></td></tr>
+    <tr><td>产品颜色：</td><td><input type="text" data-name="pcolor"></td></tr>
+    <tr><td>颜色图片：</td><td><input type="text" data-name="color-img" style="width: 500px"></td></tr>
+    <tr><td>产品尺码：</td><td><input type="text" data-name="psize"></td></tr>
+    <tr><td>产品库存：</td><td><input type="text" data-name="pstock"></td></tr>
+    <tr><td colspan="2" class="submitBox"><input type="button" class="submit" value="提交"></td></tr>
+</table>
+
+<table class="form">
+    <tr><td>产品图片：</td><td>productimg.json</td></tr>
+    <tr><td>产品ID：</td><td><input type="text" data-name="pid" value="0"></td></tr>
+    <tr><td>产品图片：</td><td><input type="text" data-name="color-img" style="width: 500px"></td></tr>
+    <tr><td colspan="2" class="submitBox"><input type="button" class="submit" value="提交"></td></tr>
+</table>
+
+<table class="form">
+    <tr><td>产品信息：</td><td>detail.json</td></tr>
+    <tr><td>商品名：</td><td><input type="text" data-name="title" style="width: 500px"></td></tr>
+    <tr><td>价格：</td><td><input type="text" data-name="price" style="width: 500px"></td></tr>
+    <tr><td>团购：</td><td><input type="text" data-name="groupBuy" style="width: 500px"></td></tr>
+    <tr><td>收藏：</td><td><input type="text" data-name="collect" style="width: 500px"></td></tr>
+    <tr><td>商品描述：</td><td><textarea rows="10" cols="80" type="text" data-name="describe"></textarea></td></tr>
+    <tr><td>产品参数：</td><td><textarea rows="10" cols="80" type="text" data-name="parameter"></textarea></td></tr>
+    <tr><td>穿着效果：</td><td><textarea rows="10" cols="80" type="text" data-name="effect"></textarea></td></tr>
+    <tr><td>细节做工：</td><td><textarea rows="10" cols="80" type="text" data-name="workDetail"></textarea></td></tr>
+    <tr><td>包装展示：</td><td><textarea type="text" cols="80" data-name="packing"></textarea></td></tr>
+    <tr><td>服务说明：</td><td><textarea rows="10" cols="80" type="text" data-name="service"></textarea></td></tr>
+    <tr><td>尺码说明：</td><td><textarea rows="10" cols="80" type="text" data-name="size"></textarea></td></tr>
+    <tr><td colspan="2" class="submitBox"><input type="button" class="submit" value="提交"></td></tr>
+</table>
+<script src="jquery-1.11.3.min.js"></script>
+<script src="data.js"></script>
+</body>
+</html>
