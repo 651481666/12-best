@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet/less" href="css/home.less">
+    <script src="css/less-2.5.3.min.js"></script>
+</head>
+<body>
+    <!--头部-->
+    <header class="header">
+        <div class="wrap clearfix">
+            <a href="#" class="title fl header_img_bg">蘑菇街首页</a>
+            <ul class="fr home">
+                <li class="fl"><a href="login.html">登录</a></li>
+
+                <li class="fl header_img_bg myorder">
+                    <a href="#" class="s1">我的订单</a>
+                </li>
+                <li class="fl header_img_bg shopping-cart-v2">
+                    <a href="#" class="s1">购物车</a>
+                    <div class="detail">
+                        购物车中还没有商品赶紧选购吧
+                    </div>
+                </li>
+                <li class="fl custom-item">
+                    <a href="#" class="s1">客户服务<i class="xiala"></i></a>
+                    <ul class="custom_list">
+                        <li><a href="#">消费者服务</a></li>
+                        <li><a href="#">商家服务</a></li>
+                        <li><a href="#">规则中心</a></li>
+                    </ul>
+                </li>
+                <li class="fl header_img_bg myxiaodian">
+                    <a href="" class="s1">我的小店<i class="xiala"></i></a>
+                    <ul class="myxiaodian_list">
+                        <li><a href="#">管理后台</a></li>
+                        <li><a href="#">商家社区</a></li>
+                        <li><a href="#">商家培训</a></li>
+                        <li><a href="#">市场入驻</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!--搜索-->
+    <section class="search">
+        <div class="search_center" >
+            <div class="search_center_img"></div>
+            <div class="search_search">
+                <div class="search_inner_box">
+                    <span>
+                        搜商品 <i></i>
+                        <ul>
+                            <li><a href="#">商品</a></li>
+                            <li><a href="#">商铺</a></li>
+                        </ul>
+                    </span>
+                    <input class="searchInput" type="text">
+                    <input class="searchSubmit" type="submit" value="搜索">
+                </div>
+                <div class="search_hotwords">
+                    <a href="">眉笔</a>
+                    <a href="" style="color: #ff4466">内裤</a>
+                    <a href="">小白鞋</a>
+                    <a href="">口红</a>
+                    <a href="">短袖t恤</a>
+                    <a href="">袜子</a>
+                    <a href="">时尚套装</a>
+                    <a href="">手机壳</a>
+                    <a href="" style="color: #ff4466">卫衣</a>
+                    <a href="" style="color: #ff4466">千足银手镯</a>
+                </div>
+            </div>
+            <div class="mid_fr">
+                <img class="mid_fr_img" src="img/free.png" alt="">
+            </div>
+        </div>
+
+    </section>
+    <iframe width="100%" id="myIframe" onload="setHeight()" height="1" frameborder="0" src="home.html"></iframe>
+    <script>
+        function setHeight() {
+            var myIframe=document.getElementById('myIframe');
+            myIframe.height=getIframeHeight(myIframe);
+        }
+
+        function getIframeWindow (obj){
+           return obj.contentWindow || obj.contentDocument.parentWindow;
+        }
+
+        function getIframeHeight(obj) {
+            var idoc = getIframeWindow(obj).document;
+            if (idoc.body) {
+                return Math.max(idoc.body.scrollHeight, idoc.body.offsetHeight);
+            } else if (idoc.documentElement) {
+                return Math.max(idoc.documentElement.scrollHeight, idoc.documentElement.offsetHeight);
+            }
+        }
+</script>
+</body>
+</html>

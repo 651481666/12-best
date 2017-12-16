@@ -1,0 +1,716 @@
+@import "reset.min.css";
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  height: 100%;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.header_img_bg {
+  background: url(../img/home-split.png) left center no-repeat;
+}
+.header {
+  width: 100%;
+  background: #f2f2f2;
+  border-bottom: 1px solid #ddd;
+  height: 31px;
+}
+.header .wrap {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+.header .wrap .title {
+  background-position: -4px -234px;
+  padding: 0 20px;
+  display: inline-block;
+  height: 31px;
+  line-height: 33px;
+  vertical-align: top;
+  margin-left: 20px;
+  color: #666666;
+}
+.header .wrap .home li {
+  float: left;
+  height: 32px;
+  line-height: 16px;
+  margin-right: 15px;
+}
+.header .wrap .home li a {
+  display: block;
+  color: #666;
+  padding-left: 38px;
+  height: 16px;
+  margin-top: 8px;
+}
+.header .wrap .home li a.s1 {
+  border-left: 1px solid #ddd;
+}
+.header .wrap .home li.myorder {
+  background-position: 16px -528px;
+}
+.header .wrap .home li.shopping-cart-v2 {
+  background-position: 8px -420px;
+  position: relative;
+}
+.header .wrap .home li.shopping-cart-v2 .detail {
+  display: none;
+  position: absolute;
+  top: 29px;
+  left: -401px;
+  z-index: 3;
+  width: 500px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  background: #f2f2f2;
+}
+.header .wrap .home li.shopping-cart-v2:hover .detail {
+  display: block;
+}
+.header .wrap .home li.custom-item {
+  position: relative;
+}
+.header .wrap .home li.custom-item a {
+  padding-left: 10px;
+  margin-right: 10px;
+}
+.header .wrap .home li.custom-item a i {
+  position: absolute;
+  width: 7px;
+  height: 5px;
+  top: 14px;
+  right: 0;
+  background: url(../img/home-split.png) -4px -475px no-repeat;
+  z-index: 444;
+}
+.header .wrap .home li.custom-item .custom_list {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: #f2f2f2 ;
+}
+.header .wrap .home li.custom-item .custom_list li {
+  margin-right: 0px;
+  border-bottom: 1px solid transparent;
+}
+.header .wrap .home li.custom-item .custom_list li a {
+  width: 62px;
+  height: 100%;
+  line-height: 30px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 0;
+}
+.header .wrap .home li.custom-item:hover .custom_list {
+  display: block;
+}
+.header .wrap .home li.custom-item:hover .custom_list li:hover {
+  border-bottom: 1px solid #fff;
+  background: #999;
+}
+.header .wrap .home li.myxiaodian {
+  background-position: 8px -566px;
+  position: relative;
+}
+.header .wrap .home li.myxiaodian a {
+  margin-right: 10px;
+}
+.header .wrap .home li.myxiaodian a i {
+  position: absolute;
+  width: 7px;
+  height: 5px;
+  top: 14px;
+  right: 0;
+  background: url(../img/home-split.png) -4px -475px no-repeat;
+  z-index: 444;
+}
+.header .wrap .home li.myxiaodian .myxiaodian_list {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: #f2f2f2 ;
+}
+.header .wrap .home li.myxiaodian .myxiaodian_list li {
+  margin-right: 0px;
+  border-bottom: 1px solid transparent;
+}
+.header .wrap .home li.myxiaodian .myxiaodian_list li a {
+  width: 62px;
+  height: 100%;
+  line-height: 30px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 0;
+}
+.header .wrap .home li.myxiaodian .myxiaodian_list a {
+  padding-left: 10px;
+}
+.header .wrap .home li.myxiaodian:hover .myxiaodian_list {
+  display: block;
+}
+.header .wrap .home li.myxiaodian:hover .myxiaodian_list li:hover {
+  border-bottom: 1px solid #fff;
+  background: #999;
+}
+.search {
+  width: 100%;
+  height: 90px;
+  background: #fff;
+}
+.search .search_center {
+  width: 1200px;
+  height: 90px;
+  margin: 0 auto;
+}
+.search .search_center .search_center_img {
+  width: 240px;
+  height: 90px;
+  float: left;
+  background: url(../img/home-split.png) left center no-repeat;
+  background-position: -4px 15px;
+}
+.search .search_center .search_search {
+  width: 482px;
+  height: 90px;
+  float: left;
+  margin-left: 120px;
+}
+.search .search_center .search_search .search_inner_box {
+  width: 480px;
+  height: 34px;
+  border: 1px solid #f07;
+  border-radius: 0 6px 6px 0;
+  margin-top: 20px;
+}
+.search .search_center .search_search .search_inner_box span {
+  display: block;
+  float: left;
+  height: 34px;
+  width: 60px;
+  line-height: 34px;
+  color: #f07;
+  text-align: center;
+  position: relative;
+}
+.search .search_center .search_search .search_inner_box span i {
+  position: absolute;
+  width: 7px;
+  height: 5px;
+  top: 14px;
+  right: 0;
+  background: url(../img/home-split.png) -4px -475px no-repeat;
+  z-index: 444;
+  background-position: -58px -229px;
+  top: 15px;
+}
+.search .search_center .search_search .search_inner_box span ul {
+  display: none;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-top: 1px solid transparent;
+  margin-top: 1px;
+}
+.search .search_center .search_search .search_inner_box span ul li a {
+  display: block;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #f07;
+}
+.search .search_center .search_search .search_inner_box span ul li a:hover {
+  background: rgba(255, 20, 147, 0.3);
+  color: #f07;
+}
+.search .search_center .search_search .search_inner_box span:hover ul {
+  display: block;
+}
+.search .search_center .search_search .search_inner_box .searchInput {
+  display: block;
+  overflow: hidden;
+  width: 305px;
+  height: 22px;
+  line-height: 22px;
+  padding: 6px 0 6px 10px;
+  color: #999;
+  font-size: 12px;
+  border: none;
+  float: left;
+}
+.search .search_center .search_search .search_inner_box .searchSubmit {
+  float: right;
+  width: 100px;
+  height: 34px;
+  overflow: hidden;
+  background-color: #f07;
+  background-image: linear-gradient(to right, #f25, #ff1581);
+  border: none;
+  font-size: 16px;
+  border-radius: 0 5px 5px 0;
+  color: #FFF;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 8px;
+}
+.search .search_center .search_search .search_hotwords {
+  width: 482px;
+  height: 20px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+.search .search_center .search_search .search_hotwords a {
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 12px 0 0;
+  color: #666;
+}
+.search .search_center .mid_fr {
+  width: 220px;
+  height: 90px;
+  float: right;
+}
+.search .search_center .mid_fr .mid_fr_img {
+  width: 100%;
+  height: 90px;
+}
+.banner {
+  width: 100%;
+}
+.banner .banner_title_box {
+  height: 40px;
+  border-bottom: 2px solid #ff4466;
+  background: #fff;
+}
+.banner .banner_title_box .title-wrap {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+.banner .banner_title_box .title-wrap .title-header {
+  height: 100%;
+}
+.banner .banner_title_box .title-wrap .title-header li {
+  float: left;
+  width: 141px;
+  height: 100%;
+  text-align: center;
+}
+.banner .banner_title_box .title-wrap .title-header li a {
+  display: block;
+  margin-top: 10px;
+  height: 20px;
+  border-left: 1px solid #ddd;
+  line-height: 20px;
+  font-size: 18px;
+  color: #666;
+}
+.banner .banner_title_box .title-wrap .title-header li a:hover {
+  color: #ff4466;
+}
+.banner .banner_title_box .title-wrap .title-header li:nth-of-type(1) {
+  width: 257px;
+  text-align: left;
+  background: url("../img/zhutiBg.png") no-repeat;
+}
+.banner .banner_title_box .title-wrap .title-header li:nth-of-type(1) a {
+  padding-left: 47px;
+  border: none;
+  color: #fff;
+}
+.banner .banner_title_box .title-wrap .title-header li:nth-of-type(1) a:hover {
+  color: #fff;
+}
+.banner .banner_title_box .title-wrap .title-header li:nth-of-type(2) a {
+  border: none;
+}
+.banner .banner-wrapper {
+  background: yellow;
+  height: 440px;
+  overflow: hidden;
+}
+.banner .banner-wrapper .banner_container {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.banner .banner-wrapper .banner_container .menu_left {
+  width: 256px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+}
+.banner .banner-wrapper .banner_container .menu_left .theme {
+  margin-top: 10px;
+}
+.banner .banner-wrapper .banner_container .menu_left .theme li .theme_name {
+  width: 100%;
+  border-left: 3px solid transparent;
+  height: 31px;
+  padding: 3px 0 2px 6px;
+  box-sizing: border-box;
+}
+.banner .banner-wrapper .banner_container .menu_left .theme li .theme_name dt {
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  width: 50px;
+  line-height: 26px;
+}
+.banner .banner-wrapper .banner_container .menu_left .theme li .theme_name dd span a {
+  font-size: 12px;
+  color: #999999;
+  margin-right: 30px;
+  line-height: 28px;
+  position: relative;
+}
+.banner .banner-wrapper .banner_container .menu_left .theme li .theme_name dd span a .hot {
+  position: absolute;
+  top: 5px;
+  right: -10px;
+  width: 10px;
+  height: 10px;
+  background: url("../img/hot.png") no-repeat;
+  background-size: 100%;
+}
+.banner .banner-wrapper .banner_container .menu_left .theme li:hover {
+  background: #ffffff;
+}
+.banner .banner-wrapper .banner_container .menu_left .theme li:hover .theme_name {
+  border-left: 3px solid #f07;
+}
+.banner .banner-wrapper .banner_container .menu_center {
+  display: none;
+  width: 778px;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  top: 0px;
+  left: 256px;
+  z-index: 6666;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.banner .banner-wrapper .banner_container .menu_center h3 {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #666;
+}
+.banner .banner-wrapper .banner_container .menu_center dl dt {
+  border-bottom: 1px solid #999999;
+}
+.banner .banner-wrapper .banner_container .menu_center dl dt a {
+  height: 25px;
+  line-height: 25px;
+  color: #666666;
+  position: relative;
+}
+.banner .banner-wrapper .banner_container .menu_center dl dt a:nth-last-of-type(1) {
+  margin-right: 40px;
+}
+.banner .banner-wrapper .banner_container .menu_center dl dt a i {
+  position: absolute;
+  top: 6px;
+  right: -15px;
+  display: block;
+  background: url("../img/arr-right.png") no-repeat;
+  width: 10px;
+  height: 10px;
+  background-size: 100%;
+}
+.banner .banner-wrapper .banner_container .menu_center dl dd {
+  padding: 10px 0;
+}
+.banner .banner-wrapper .banner_container .menu_center dl dd a {
+  height: 26px;
+  line-height: 16px;
+  color: #999999;
+  margin-right: 30px;
+}
+.banner .banner-wrapper .banner_container .menu_center dl dd a.hot {
+  color: #f07;
+}
+.banner .banner-wrapper .banner_container .banner_center {
+  width: 778px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  background: #eee;
+}
+.banner .banner-wrapper .banner_container .banner_center .banner_run {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.banner .banner-wrapper .banner_container .banner_center .banner_run li {
+  width: 778px;
+  height: 100%;
+  float: left;
+  cursor: pointer;
+}
+.banner .banner-wrapper .banner_container .banner_center .banner_run li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner .banner-wrapper .banner_container .banner_center .banner_run li a img {
+  width: 100%;
+  height: 100%;
+  display: none;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.banner .banner-wrapper .banner_container .banner_center .focus {
+  position: relative;
+  top: 410px;
+  padding: 4px;
+  background: #999999;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  border-radius: 20px;
+  display: inline-block;
+}
+.banner .banner-wrapper .banner_container .banner_center .focus li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 4px;
+  background: #fff;
+  cursor: pointer;
+}
+.banner .banner-wrapper .banner_container .banner_center .focus li.select {
+  background: red;
+}
+.banner .banner-wrapper .banner_container .banner_right {
+  width: 166px;
+  height: 100%;
+}
+.banner .banner-wrapper .banner_container .banner_right .userInfo {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 195px;
+  background: rgba(255, 255, 255, 0.7);
+}
+.banner .banner-wrapper .banner_container .banner_right .chou {
+  width: 100%;
+  height: 205px;
+  background: rgba(255, 255, 255, 0.7);
+}
+.lazyOut {
+  height: 22px;
+  line-height: 22px;
+  overflow: hidden;
+  margin: 0 0 16px;
+  font-size: 20px;
+}
+.lazyOut .sideIcon {
+  background-color: #FFA1B8;
+  width: 10px;
+  height: 100%;
+  margin-right: 10px;
+}
+.lazyOut .cateTitleName {
+  font-size: 18px;
+  color: #666;
+  margin-right: 20px;
+}
+.lazyOut .cateLink {
+  line-height: 20px;
+  font-size: 14px;
+}
+.lazyOut .cateLink a {
+  color: #666;
+  margin: 0 10px;
+}
+.lazyOut .cateMore {
+  font-size: 14px;
+  position: relative;
+  margin-right: 20px;
+}
+.lazyOut .cateMore .allIcon {
+  position: absolute;
+  top: 6px;
+  right: -15px;
+  display: block;
+  background: url("../img/arr-right.png") no-repeat;
+  width: 10px;
+  height: 10px;
+  background-size: 100%;
+}
+.footLazy {
+  background: #fff;
+}
+.footLazy .lazyLeft {
+  display: block;
+  width: 240px;
+  height: 360px;
+  overflow: hidden;
+  position: relative;
+}
+.footLazy .lazyLeft .bigBannerTop {
+  width: 210px;
+  height: 70px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 5;
+  overflow: hidden;
+}
+.footLazy .lazyLeft .bigBannerTop a {
+  float: left;
+  display: block;
+  width: 57px;
+  height: 27px;
+  margin: 0 10px 10px 0;
+  color: #fff;
+  text-align: center;
+  line-height: 28px;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: solid 1px rgba(0, 0, 0, 0.15);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.footLazy .lazyLeft .bigBannerFoot .footTitle {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 130px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 26px;
+  z-index: 2;
+}
+.footLazy .lazyLeft .bigBannerFoot .footSub {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 160px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  z-index: 2;
+}
+.footLazy .lazyLeft .bigBannerFoot .footBanner {
+  width: 150px;
+  height: 160px;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  transition: -webkit-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+  transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
+}
+.footLazy .lazyLeft .bigBannerFoot .footBanner img {
+  width: 100%;
+  height: 100%;
+}
+.footLazy .lazyLeft .bigBannerFoot .footBanner:hover {
+  bottom: 10px;
+}
+.footLazy .lazyBanner {
+  width: 720px;
+  height: 360px;
+  overflow: hidden;
+}
+.footLazy .lazyBanner ul li {
+  float: left;
+}
+.footLazy .lazyBanner ul li a {
+  position: relative;
+  display: block;
+  width: 238px;
+  height: 180px;
+  border-bottom: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+  overflow: hidden;
+  color: #666;
+}
+.footLazy .lazyBanner ul li a .footTitle {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 130px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 26px;
+  z-index: 2;
+  top: 10px;
+}
+.footLazy .lazyBanner ul li a .footSub {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 160px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  z-index: 2;
+  top: 40px;
+}
+.footLazy .lazyBanner ul li a .footBanner {
+  width: 150px;
+  height: 160px;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  transition: -webkit-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+  transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
+  width: 140px;
+  height: 110px;
+}
+.footLazy .lazyBanner ul li a .footBanner img {
+  width: 100%;
+  height: 100%;
+}
+.footLazy .lazyRight {
+  width: 240px;
+  height: 360px;
+  overflow: hidden;
+}
+.footLazy .lazyRight a {
+  width: 120px;
+  height: 90px;
+  overflow: hidden;
+  display: block;
+  float: left;
+}
+.footLazy .lazyRight a div {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  margin: 15px auto;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.footLazy .lazyRight a div img {
+  width: 100%;
+  height: 100%;
+}
+.Women {
+  width: 1200px;
+  margin: 20px  auto 0;
+}
+.Women .footLazy .lazyLeft {
+  background: #fce6ee;
+}
