@@ -44,6 +44,7 @@ html,body{
 }
 
 @W:1200;
+@colorWomen:#FFA1B8;
 .header_img_bg{
   background: url(../img/home-split.png) left center no-repeat;
 }
@@ -73,13 +74,10 @@ html,body{
   width: 150px;
   height: 160px;
   position: absolute;
-  bottom: 0;
+  bottom:0px;
   left: 50px;
   -webkit-transition: -webkit-transform 0.4s ease-out;
-  transition: -webkit-transform 0.4s ease-out;
   transition: transform 0.4s ease-out;
-  transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
-
 }
 
 .header{
@@ -383,9 +381,8 @@ html,body{
         width:256px;
         height:100%;
         background: rgba(255,255,255,.7);
-        .theme{
-          margin-top: 10px;
-          li{
+        &.theme{
+          padding-top: 10px;
             .theme_name{
               width:100%;
               border-left:3px solid transparent;
@@ -395,10 +392,11 @@ html,body{
               dt{
                 font-size: 14px;
                 font-weight: bold;
-                color: #666;
                 width:50px;
                 line-height: 26px;
-
+                a{
+                  color: #666;
+                }
               }
               dd{
                 span{
@@ -423,14 +421,13 @@ html,body{
                   }
                 }
               }
-            }
-            &:hover{
-              background: rgba(255,255,255,1);
-              .theme_name{
-                border-left:3px solid #f07;
+              &:hover{
+                background: rgba(255,255,255,1);
+                .theme_name{
+                  border-left:3px solid #f07;
+                }
               }
             }
-          }
         }
       }
       .menu_center{
@@ -553,11 +550,64 @@ html,body{
           margin-bottom:10px;
           height:195px;
           background: rgba(255,255,255,.7);
+          padding-top:10px;
+          text-align: center;
+          .person{
+            display: block;
+            text-decoration: none;
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 0 auto;
+            border-radius: 100%;
+            background: #ff94c6 url(https://s10.mogucdn.com/p2/160826/upload_7a9719cl61k83h5cbkc9fl1330i5c_60x64.png) no-repeat center center;
+            background-size: 30px 30px;
+          }
+          p{
+            color: #666;
+            margin-top: 15px;
+            margin-bottom: 15px;
+          }
+          .personInfo{
+            width: 72px;
+            height: 24px;
+            border: 1px solid #ff5777;
+            font-size: 12px;
+            color: #ff5777;
+            margin: 0 auto;
+            line-height: 24px;
+            background: none;
+
+          }
         }
         .chou{
           width:100%;
           height:205px;
           background: rgba(255,255,255,.7);
+          text-align: center;
+          .top_title{
+            font-size: 16px;
+            color: #333;
+            padding-top: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+          }
+          .top-desc{
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+          }
+          img{
+            width: 130px;
+            height: 130px;
+            overflow: hidden;
+            margin: 0 auto;
+          }
         }
       }
     }
@@ -596,6 +646,7 @@ html,body{
     font-size: 14px;
     position: relative;
     margin-right: 20px;
+    color:#666;
     .allIcon{
       position: absolute;
       top: 6px;
@@ -643,6 +694,8 @@ html,body{
       }
     }
     .bigBannerFoot{
+      height:100%;
+      position: relative;
 
       .footTitle{
         .textBase();
@@ -657,7 +710,7 @@ html,body{
           height:100%;
         }
         &:hover{
-          bottom:10px;
+          transform:translateY(-20px)
         }
       }
     }
@@ -680,6 +733,7 @@ html,body{
           color: #666;
           .footTitle{
             .textBase();
+            font-size: 18px;
             top:10px;
           }
           .footSub{
@@ -694,6 +748,9 @@ html,body{
               width:100%;
               height:100%;
             }
+            &:hover{
+              transform:translateY(-10px)
+            }
           }
         }
       }
@@ -703,27 +760,135 @@ html,body{
     width: 240px;
     height: 360px;
     overflow: hidden;
-    a{
+    .dajia{
+      font-size: 17px;
+      text-indent: 20px;
+      height: 56px;
+      line-height: 56px;
+    }
+    .changeIcon{
+      font-size: 12px;
+      text-indent: 20px;
+      height: 56px;
+      line-height: 56px;
+      color: #5f5f5f;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+    .itemLink{
+      padding-top:10px;
+      a{
+        width: 100%;
+        height: 66px;
+        overflow: hidden;
+        margin-bottom: 10px;
+        display: block;
+        .imgLink{
+          width: 66px;
+          height: 66px;
+          margin: 0 20px;
+          background: #fff;
+          -webkit-transition: opacity 0.2s;
+          transition: opacity 0.2s;
+          img{
+            width:100%;
+            height:100%;
+          }
+          &.ling{
+            width: 200px;
+            height: 200px;
+            margin: 0 20px 15px;
+            img{
+              width:100%;
+              height:100%;
+            }
+          }
+          &:hover{
+            opacity: 0.5;
+          }
+        }
+        .textLink{
+          width: 114px;
+          overflow: hidden;
+          height: 100%;
+          margin:0px 20px 0 0;
+
+          p{
+            height: 40px;
+            overflow: hidden;
+            font-size: 12px;
+            line-height: 20px;
+            color: #5f5f5f;
+          }
+          span{
+            float: left;
+            color: #ff5777;
+            margin-top: 4px;
+            margin-right: 8px;
+          }
+        }
+        &.itemMei{
+          width: 100%;
+          height: 310px;
+          overflow: hidden;
+          display: block;
+        }
+        .lingText{
+            width: 200px;
+            margin: 0 auto;
+            font-size: 14px;
+            height: 100px;
+            p{
+              height: 40px;
+              overflow: hidden;
+              font-size: 12px;
+              color: #5f5f5f;
+              width: 100%;
+            }
+            .goods{
+              float: left;
+              color: #ff5777;
+              margin-top: 4px;
+              margin-right: 8px;
+            }
+            .yuanshi{
+              float: left;
+              margin-top: 4px;
+              text-decoration: line-through;
+              color: #999;
+            }
+          }
+        }
+      }
+    .paipai{
       width: 120px;
       height: 90px;
       overflow: hidden;
       display: block;
       float:left;
-      div{
+      background: #fff;
+      opacity: 1;
+      -webkit-transition: opacity .3s ease-out;
+      transition: opacity .3s ease-out;
+
+      .pinpaiBox{
         width: 60px;
         height: 60px;
         overflow: hidden;
         margin: 15px auto;
-        -webkit-transition: opacity 0.2s;
-        transition: opacity 0.2s;
         img{
           width:100%;
           height:100%;
         }
       }
+      &:hover{
+        opacity: .5;
+      }
     }
   }
 }
+
+
 
 .Women{
   width:1200px;
@@ -734,4 +899,241 @@ html,body{
     }
   }
 }
+
+.LadysShoes{
+  width:1200px;
+  margin:20px  auto 0;
+  .lazyOut{
+    .sideIcon{
+      background:#FFC97A ;
+    }
+  }
+  .footLazy{
+    .lazyLeft{
+      background: #fce6de;
+    }
+    .lazyRight{
+    }
+  }
+}
+
+.BeautyMakeup{
+  width:1200px;
+  margin:20px  auto 0;
+  .footLazy{
+    .lazyLeft{
+      background: #ffd4e3;
+    }
+  }
+}
+
+.man{
+  width:1200px;
+  margin:20px  auto 0;
+  .lazyOut{
+    .sideIcon{
+      background:#7CACEF ;
+    }
+  }
+  .footLazy{
+    .lazyLeft{
+      background:#cee2fe;
+    }
+
+  }
+}
+
+.household{
+  width:1200px;
+  margin:20px  auto 0;
+  .lazyOut{
+    .sideIcon{
+      background:#CD947F ;
+    }
+  }
+  .footLazy{
+    .lazyLeft{
+      background:#ece8de;
+    }
+
+  }
+}
+.undergarment{
+  width:1200px;
+  margin:20px  auto 0;
+  .lazyOut{
+    .sideIcon{
+      background:#f34c68 ;
+    }
+  }
+  .footLazy{
+    .lazyLeft{
+      background:#f8dbdf;
+    }
+
+  }
+
+}
+.mogu{
+  width:1200px;
+  margin:20px  auto 0;
+  .lazyOut{
+    .sideIcon{
+      background:#fae7be ;
+    }
+  }
+  .footLazy{
+    .lazyLeft{
+      background:#F4EED6;
+    }
+
+  }
+
+}
+
+.muying{
+  width:1200px;
+  margin:20px  auto 0;
+  .lazyOut{
+    .sideIcon{
+      background:#8ED8D0;
+    }
+  }
+  .footLazy{
+    .lazyLeft{
+      background:#e0f2f8;
+    }
+
+  }
+
+}
+
+.baobao{
+  width:1200px;
+  margin:20px  auto 0;
+  .lazyOut{
+    .sideIcon{
+      background-color: #83C0E6;
+    }
+  }
+  .footLazy{
+    .lazyLeft{
+      background: #d8ebf6;
+    }
+
+  }
+}
+
+.peishi{
+  width:1200px;
+  margin:20px  auto 0;
+  .lazyOut{
+    .sideIcon{
+      background-color: #6786bb;
+    }
+  }
+  .footLazy{
+    .lazyLeft{
+      background: #deeaff;
+    }
+
+  }
+}
+
+.sport{
+  width:1200px;
+  margin:20px  auto 0;
+  .lazyOut{
+    .sideIcon{
+      background-color: #95CD75;
+    }
+  }
+  .footLazy{
+    .lazyLeft{
+      background: #e6f2df;
+    }
+
+  }
+}
+
+.like{
+  width:1200px;
+  margin:20px auto;
+  overflow: hidden;
+  .imagebox_title_content{
+    height:40px;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .wall_goods_box{
+      margin-left: -25px;
+    li{
+      margin-left:25px;
+      margin-bottom: 20px;
+      width: 220px;
+      background: #fff;
+      overflow: hidden;
+      float: left;
+      .likeImg{
+        display: block;
+        img{
+          width:100%;
+          height:330px;
+          overflow: hidden;
+        }
+      }
+      .likeText{
+        display: block;
+        padding: 0 8px;
+        overflow: hidden;
+        p{
+          line-height: 20px;
+          position: relative;
+          margin-top: 6px;
+          font-size: 14px;
+          width: 100%;
+          color: #333;
+          height: 40px;
+          margin-bottom: 3px;
+        }
+        div{
+          .price{
+            color: #333;
+            font-weight: 700;
+            font-size: 16px;
+
+          }
+          .yuanprice{
+            font-size: 14px;
+            color: #666;
+            margin: 3px 0 0 8px;
+            line-height: 20px;
+            text-decoration: line-through;
+          }
+        }
+        .xing{
+            font-size: 12px;
+            color: #999;
+            margin-top: 3px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

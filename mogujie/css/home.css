@@ -351,31 +351,33 @@ body {
   height: 100%;
   background: rgba(255, 255, 255, 0.7);
 }
-.banner .banner-wrapper .banner_container .menu_left .theme {
-  margin-top: 10px;
+.banner .banner-wrapper .banner_container .menu_left.theme {
+  padding-top: 10px;
 }
-.banner .banner-wrapper .banner_container .menu_left .theme li .theme_name {
+.banner .banner-wrapper .banner_container .menu_left.theme .theme_name {
   width: 100%;
   border-left: 3px solid transparent;
   height: 31px;
   padding: 3px 0 2px 6px;
   box-sizing: border-box;
 }
-.banner .banner-wrapper .banner_container .menu_left .theme li .theme_name dt {
+.banner .banner-wrapper .banner_container .menu_left.theme .theme_name dt {
   font-size: 14px;
   font-weight: bold;
-  color: #666;
   width: 50px;
   line-height: 26px;
 }
-.banner .banner-wrapper .banner_container .menu_left .theme li .theme_name dd span a {
+.banner .banner-wrapper .banner_container .menu_left.theme .theme_name dt a {
+  color: #666;
+}
+.banner .banner-wrapper .banner_container .menu_left.theme .theme_name dd span a {
   font-size: 12px;
   color: #999999;
   margin-right: 30px;
   line-height: 28px;
   position: relative;
 }
-.banner .banner-wrapper .banner_container .menu_left .theme li .theme_name dd span a .hot {
+.banner .banner-wrapper .banner_container .menu_left.theme .theme_name dd span a .hot {
   position: absolute;
   top: 5px;
   right: -10px;
@@ -384,10 +386,10 @@ body {
   background: url("../img/hot.png") no-repeat;
   background-size: 100%;
 }
-.banner .banner-wrapper .banner_container .menu_left .theme li:hover {
+.banner .banner-wrapper .banner_container .menu_left.theme .theme_name:hover {
   background: #ffffff;
 }
-.banner .banner-wrapper .banner_container .menu_left .theme li:hover .theme_name {
+.banner .banner-wrapper .banner_container .menu_left.theme .theme_name:hover .theme_name {
   border-left: 3px solid #f07;
 }
 .banner .banner-wrapper .banner_container .menu_center {
@@ -506,11 +508,63 @@ body {
   margin-bottom: 10px;
   height: 195px;
   background: rgba(255, 255, 255, 0.7);
+  padding-top: 10px;
+  text-align: center;
+}
+.banner .banner-wrapper .banner_container .banner_right .userInfo .person {
+  display: block;
+  text-decoration: none;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 0 auto;
+  border-radius: 100%;
+  background: #ff94c6 url(https://s10.mogucdn.com/p2/160826/upload_7a9719cl61k83h5cbkc9fl1330i5c_60x64.png) no-repeat center center;
+  background-size: 30px 30px;
+}
+.banner .banner-wrapper .banner_container .banner_right .userInfo p {
+  color: #666;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.banner .banner-wrapper .banner_container .banner_right .userInfo .personInfo {
+  width: 72px;
+  height: 24px;
+  border: 1px solid #ff5777;
+  font-size: 12px;
+  color: #ff5777;
+  margin: 0 auto;
+  line-height: 24px;
+  background: none;
 }
 .banner .banner-wrapper .banner_container .banner_right .chou {
   width: 100%;
   height: 205px;
   background: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+.banner .banner-wrapper .banner_container .banner_right .chou .top_title {
+  font-size: 16px;
+  color: #333;
+  padding-top: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.banner .banner-wrapper .banner_container .banner_right .chou .top-desc {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.banner .banner-wrapper .banner_container .banner_right .chou img {
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 .lazyOut {
   height: 22px;
@@ -542,6 +596,7 @@ body {
   font-size: 14px;
   position: relative;
   margin-right: 20px;
+  color: #666;
 }
 .lazyOut .cateMore .allIcon {
   position: absolute;
@@ -588,6 +643,10 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.footLazy .lazyLeft .bigBannerFoot {
+  height: 100%;
+  position: relative;
+}
 .footLazy .lazyLeft .bigBannerFoot .footTitle {
   position: absolute;
   width: 100%;
@@ -612,19 +671,17 @@ body {
   width: 150px;
   height: 160px;
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 50px;
   -webkit-transition: -webkit-transform 0.4s ease-out;
-  transition: -webkit-transform 0.4s ease-out;
   transition: transform 0.4s ease-out;
-  transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
 }
 .footLazy .lazyLeft .bigBannerFoot .footBanner img {
   width: 100%;
   height: 100%;
 }
 .footLazy .lazyLeft .bigBannerFoot .footBanner:hover {
-  bottom: 10px;
+  transform: translateY(-20px);
 }
 .footLazy .lazyBanner {
   width: 720px;
@@ -653,6 +710,7 @@ body {
   line-height: 30px;
   font-size: 26px;
   z-index: 2;
+  font-size: 18px;
   top: 10px;
 }
 .footLazy .lazyBanner ul li a .footSub {
@@ -670,12 +728,10 @@ body {
   width: 150px;
   height: 160px;
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 50px;
   -webkit-transition: -webkit-transform 0.4s ease-out;
-  transition: -webkit-transform 0.4s ease-out;
   transition: transform 0.4s ease-out;
-  transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
   width: 140px;
   height: 110px;
 }
@@ -683,29 +739,136 @@ body {
   width: 100%;
   height: 100%;
 }
+.footLazy .lazyBanner ul li a .footBanner:hover {
+  transform: translateY(-10px);
+}
 .footLazy .lazyRight {
   width: 240px;
   height: 360px;
   overflow: hidden;
 }
-.footLazy .lazyRight a {
+.footLazy .lazyRight .dajia {
+  font-size: 17px;
+  text-indent: 20px;
+  height: 56px;
+  line-height: 56px;
+}
+.footLazy .lazyRight .changeIcon {
+  font-size: 12px;
+  text-indent: 20px;
+  height: 56px;
+  line-height: 56px;
+  color: #5f5f5f;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.footLazy .lazyRight .itemLink {
+  padding-top: 10px;
+}
+.footLazy .lazyRight .itemLink a {
+  width: 100%;
+  height: 66px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  display: block;
+}
+.footLazy .lazyRight .itemLink a .imgLink {
+  width: 66px;
+  height: 66px;
+  margin: 0 20px;
+  background: #fff;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.footLazy .lazyRight .itemLink a .imgLink img {
+  width: 100%;
+  height: 100%;
+}
+.footLazy .lazyRight .itemLink a .imgLink.ling {
+  width: 200px;
+  height: 200px;
+  margin: 0 20px 15px;
+}
+.footLazy .lazyRight .itemLink a .imgLink.ling img {
+  width: 100%;
+  height: 100%;
+}
+.footLazy .lazyRight .itemLink a .imgLink:hover {
+  opacity: 0.5;
+}
+.footLazy .lazyRight .itemLink a .textLink {
+  width: 114px;
+  overflow: hidden;
+  height: 100%;
+  margin: 0px 20px 0 0;
+}
+.footLazy .lazyRight .itemLink a .textLink p {
+  height: 40px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 20px;
+  color: #5f5f5f;
+}
+.footLazy .lazyRight .itemLink a .textLink span {
+  float: left;
+  color: #ff5777;
+  margin-top: 4px;
+  margin-right: 8px;
+}
+.footLazy .lazyRight .itemLink a.itemMei {
+  width: 100%;
+  height: 310px;
+  overflow: hidden;
+  display: block;
+}
+.footLazy .lazyRight .itemLink a .lingText {
+  width: 200px;
+  margin: 0 auto;
+  font-size: 14px;
+  height: 100px;
+}
+.footLazy .lazyRight .itemLink a .lingText p {
+  height: 40px;
+  overflow: hidden;
+  font-size: 12px;
+  color: #5f5f5f;
+  width: 100%;
+}
+.footLazy .lazyRight .itemLink a .lingText .goods {
+  float: left;
+  color: #ff5777;
+  margin-top: 4px;
+  margin-right: 8px;
+}
+.footLazy .lazyRight .itemLink a .lingText .yuanshi {
+  float: left;
+  margin-top: 4px;
+  text-decoration: line-through;
+  color: #999;
+}
+.footLazy .lazyRight .paipai {
   width: 120px;
   height: 90px;
   overflow: hidden;
   display: block;
   float: left;
+  background: #fff;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
 }
-.footLazy .lazyRight a div {
+.footLazy .lazyRight .paipai .pinpaiBox {
   width: 60px;
   height: 60px;
   overflow: hidden;
   margin: 15px auto;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
 }
-.footLazy .lazyRight a div img {
+.footLazy .lazyRight .paipai .pinpaiBox img {
   width: 100%;
   height: 100%;
+}
+.footLazy .lazyRight .paipai:hover {
+  opacity: .5;
 }
 .Women {
   width: 1200px;
@@ -713,4 +876,163 @@ body {
 }
 .Women .footLazy .lazyLeft {
   background: #fce6ee;
+}
+.LadysShoes {
+  width: 1200px;
+  margin: 20px  auto 0;
+}
+.LadysShoes .lazyOut .sideIcon {
+  background: #FFC97A ;
+}
+.LadysShoes .footLazy .lazyLeft {
+  background: #fce6de;
+}
+.BeautyMakeup {
+  width: 1200px;
+  margin: 20px  auto 0;
+}
+.BeautyMakeup .footLazy .lazyLeft {
+  background: #ffd4e3;
+}
+.man {
+  width: 1200px;
+  margin: 20px  auto 0;
+}
+.man .lazyOut .sideIcon {
+  background: #7CACEF ;
+}
+.man .footLazy .lazyLeft {
+  background: #cee2fe;
+}
+.household {
+  width: 1200px;
+  margin: 20px  auto 0;
+}
+.household .lazyOut .sideIcon {
+  background: #CD947F ;
+}
+.household .footLazy .lazyLeft {
+  background: #ece8de;
+}
+.undergarment {
+  width: 1200px;
+  margin: 20px  auto 0;
+}
+.undergarment .lazyOut .sideIcon {
+  background: #f34c68 ;
+}
+.undergarment .footLazy .lazyLeft {
+  background: #f8dbdf;
+}
+.mogu {
+  width: 1200px;
+  margin: 20px  auto 0;
+}
+.mogu .lazyOut .sideIcon {
+  background: #fae7be ;
+}
+.mogu .footLazy .lazyLeft {
+  background: #F4EED6;
+}
+.muying {
+  width: 1200px;
+  margin: 20px  auto 0;
+}
+.muying .lazyOut .sideIcon {
+  background: #8ED8D0;
+}
+.muying .footLazy .lazyLeft {
+  background: #e0f2f8;
+}
+.baobao {
+  width: 1200px;
+  margin: 20px  auto 0;
+}
+.baobao .lazyOut .sideIcon {
+  background-color: #83C0E6;
+}
+.baobao .footLazy .lazyLeft {
+  background: #d8ebf6;
+}
+.peishi {
+  width: 1200px;
+  margin: 20px  auto 0;
+}
+.peishi .lazyOut .sideIcon {
+  background-color: #6786bb;
+}
+.peishi .footLazy .lazyLeft {
+  background: #deeaff;
+}
+.sport {
+  width: 1200px;
+  margin: 20px  auto 0;
+}
+.sport .lazyOut .sideIcon {
+  background-color: #95CD75;
+}
+.sport .footLazy .lazyLeft {
+  background: #e6f2df;
+}
+.like {
+  width: 1200px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+.like .imagebox_title_content {
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.like .wall_goods_box {
+  margin-left: -25px;
+}
+.like .wall_goods_box li {
+  margin-left: 25px;
+  margin-bottom: 20px;
+  width: 220px;
+  background: #fff;
+  overflow: hidden;
+  float: left;
+}
+.like .wall_goods_box li .likeImg {
+  display: block;
+}
+.like .wall_goods_box li .likeImg img {
+  width: 100%;
+  height: 330px;
+  overflow: hidden;
+}
+.like .wall_goods_box li .likeText {
+  display: block;
+  padding: 0 8px;
+  overflow: hidden;
+}
+.like .wall_goods_box li .likeText p {
+  line-height: 20px;
+  position: relative;
+  margin-top: 6px;
+  font-size: 14px;
+  width: 100%;
+  color: #333;
+  height: 40px;
+  margin-bottom: 3px;
+}
+.like .wall_goods_box li .likeText div .price {
+  color: #333;
+  font-weight: 700;
+  font-size: 16px;
+}
+.like .wall_goods_box li .likeText div .yuanprice {
+  font-size: 14px;
+  color: #666;
+  margin: 3px 0 0 8px;
+  line-height: 20px;
+  text-decoration: line-through;
+}
+.like .wall_goods_box li .likeText .xing {
+  font-size: 12px;
+  color: #999;
+  margin-top: 3px;
 }
