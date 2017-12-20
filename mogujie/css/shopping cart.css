@@ -1,0 +1,220 @@
+@import "reset.css";
+html,
+body,
+main {
+  width: 100%;
+  overflow: hidden;
+}
+main {
+  margin-left: -30px;
+}
+.container {
+  padding: 0 10%;
+}
+.icon {
+  width: 1rem;
+  height: 1rem;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.rightside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 100%;
+  background: #202020;
+}
+.rightside .spaceholder {
+  height: 7%;
+}
+.rightside .userid {
+  height: 6%;
+}
+.rightside .outer-options {
+  padding: 0 4px;
+  padding-bottom: 4px;
+}
+.rightside .outer-options .options {
+  display: block;
+  padding: 0 4px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 16px;
+  color: #ffffff;
+}
+.rightside .outer-options .options svg {
+  margin: 4px 0;
+}
+.rightside .outer-options .borderbtm {
+  margin-top: 4px;
+  margin-bottom: -4px;
+  height: 1px;
+  border-bottom: 1px solid #ffffff;
+}
+.rightside .outer-options:hover {
+  background: #ef2f23;
+}
+.rightside .outer-options:hover .borderbtm {
+  border-bottom: 1px solid #ef2f23;
+}
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  background: #f2f2f2;
+}
+header .logo {
+  width: 13%;
+  height: 66%;
+}
+header .logo img {
+  width: 100%;
+  height: 100%;
+}
+header .process {
+  width: 45%;
+  height: 100%;
+}
+header .process .start,
+header .process .confirm,
+header .process .pay,
+header .process .complete {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+header .process .start p,
+header .process .confirm p,
+header .process .pay p,
+header .process .complete p {
+  position: absolute;
+  top: 50px;
+  color: #dddddd;
+  font-size: 16px;
+}
+header .process .start .progress-bar,
+header .process .confirm .progress-bar,
+header .process .pay .progress-bar,
+header .process .complete .progress-bar {
+  display: flex;
+  width: 100%;
+}
+header .process .start .progress-bar .band,
+header .process .confirm .progress-bar .band,
+header .process .pay .progress-bar .band,
+header .process .complete .progress-bar .band {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background: #dddddd;
+}
+header .process .start .progress-bar .band .circle,
+header .process .confirm .progress-bar .band .circle,
+header .process .pay .progress-bar .band .circle,
+header .process .complete .progress-bar .band .circle {
+  position: absolute;
+  top: -13px;
+  left: 47.5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #dddddd;
+  text-align: center;
+  font-size: 22px;
+}
+header .process .start .progress-bar .band .circle svg,
+header .process .confirm .progress-bar .band .circle svg,
+header .process .pay .progress-bar .band .circle svg,
+header .process .complete .progress-bar .band .circle svg {
+  color: #ffffff;
+}
+header .process .start {
+  width: 12.5%;
+}
+header .process .start p {
+  left: -8px;
+}
+header .process .start .progress-bar .band .circle {
+  left: -0.3px;
+}
+header .process .confirm p {
+  left: 32px;
+}
+header .process .pay p {
+  left: 45px;
+}
+header .process .complete {
+  width: 12.5%;
+}
+header .process .complete p {
+  left: 30px;
+}
+header .process .complete .progress-bar .band .circle {
+  left: 33px;
+}
+header .process .done p {
+  color: #ff4266;
+}
+header .process .done .progress-bar .band {
+  background: #ff4266;
+}
+header .process .done .progress-bar .band .circle {
+  color: #ff4266;
+  background: #ff4266;
+}
+article {
+  height: 20px;
+}
+.footer {
+  height: 180px;
+  padding: 50px 10%;
+  background: #f2f2f2;
+}
+.footer .helper {
+  height: 100px;
+  float: left;
+  width: 25%;
+  border-bottom: 2px solid #ff5777;
+}
+.footer .helper h4 {
+  padding-left: 42.5px;
+  color: #666666;
+}
+.footer .helper .item {
+  display: inline-block;
+  justify-content: center;
+  width: 95px;
+  height: 20px;
+  line-height: 20px;
+  color: #999999;
+}
+.footer .jinfo {
+  min-height: 20px;
+  margin-top: 10px;
+}
+.footer .jinfo .item {
+  display: inline-block;
+  width: 80px;
+  height: 20px;
+  line-height: 20px;
+}
+.footer .jinfo .item a {
+  color: #666666;
+}
+.footer .jinfo .item a:hover {
+  color: #ff4266;
+}
+.footer .copyright {
+  color: #999999;
+  line-height: 27px;
+}
